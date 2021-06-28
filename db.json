@@ -1,0 +1,35 @@
+{
+  "doctors": [],
+  "patients": [
+    {
+      "name": "Alixon Azamov",
+      "year": "1999-06-09",
+      "place": "Ташкент",
+      "address": "Юнусабад",
+      "matstatus": "Женат",
+      "edu": "Высшее",
+      "work": "Работает",
+      "phone": "998991566223",
+      "phone2": "998995185224",
+      "workAddress": "Wings Dictribution",
+      "blood": "II",
+      "faktor": "3",
+      "insurance": "AB984264",
+      "insuranceFirm": "MCHJ “Human Save Limited ”",
+      "lgotoType": "Order sohibi",
+      "lgoto": "AB11111",
+      "lgotoDate": "2019-06-05",
+      "regisdate": "2021-06-09",
+      "reldate": "2021-06-24",
+      "depart": "Клиническое отделение",
+      "weight": "75",
+      "height": "180",
+      "oldDoc": "Aliyev",
+      "hosAddress": "Чиланзар",
+      "oldDisease": "Nevrologik",
+      "treatmentDate": "2021-05-13",
+      "diagnoz": "Nevrologik",
+      "id": 1
+    }
+  ]
+}
