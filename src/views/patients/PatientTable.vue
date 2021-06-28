@@ -16,7 +16,7 @@
         </v-col>
       </v-row>
     </div>
-    <v-dialog v-model="dialog" persistent max-width="700px">
+    <v-dialog v-model="dialog" persistent max-width="660px">
       <v-card>
         <v-card-title>
           <span class="headline font-weight-bold text-aligh" v-show="!isShow">Регистрация пациента</span>
@@ -75,7 +75,7 @@
         </div>
       </v-card>
     </v-dialog>
-    <v-dialog v-model="dialog1" persistent max-width="700px">
+    <v-dialog v-model="dialog1" persistent max-width="660px">
       <v-card>
         <v-card-title>
           <span class="headline font-weight-bold text-aligh" v-show="!isShow">Мед данные</span>
@@ -125,7 +125,7 @@
         </div>
       </v-card>
     </v-dialog>
-    <v-dialog v-model="dialog2" persistent max-width="700px">
+    <v-dialog v-model="dialog2" persistent max-width="660px">
       <v-card>
         <v-card-title>
           <span class="headline font-weight-bold text-aligh" v-show="!isShow">Мед данные</span>
@@ -171,7 +171,7 @@
         </div>
       </v-card>
     </v-dialog>
-    <v-dialog v-model="dialog3" persistent max-width="700px">
+    <v-dialog v-model="dialog3" persistent max-width="660px">
       <v-card>
         <v-card-title>
           <span class="headline font-weight-bold text-aligh" v-show="!isShow">Регистрация пациента</span>
