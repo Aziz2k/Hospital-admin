@@ -33,6 +33,17 @@ body {
   background-color: #fff;
   border-radius: 100px;
 }
+.dialogcount {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #56CCF2;
+  border-radius: 50%;
+  margin: auto;
+  color: #fff;
+}
 
 input {
   outline: none;

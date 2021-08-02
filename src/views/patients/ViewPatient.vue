@@ -31,7 +31,7 @@
               <div class="subtitle">Ответственный врач:</div>
             </v-col>
             <v-col cols="6">
-              <div class="desc">{{view.doctor}}</div>
+              <div class="desc">{{view.responDocs}}</div>
             </v-col>
             <v-col cols="2">
               <div class="subtitle">Причина:</div>
@@ -184,10 +184,7 @@
   .row {
     align-items: center;
   }
-  /* .person {
-    display: flex;
-    border-bottom: 1px solid #BDBDBD;
-  } */
+
   .local {
     border-bottom: 1px solid #BDBDBD;
   }

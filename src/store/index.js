@@ -9,7 +9,8 @@ export default new Vuex.Store({
     patients: [],
     doctors: [],
     search:'',
-    patId:''
+    patId:'',
+    docId:''
   },
   getters: {
     getSearch(state){
@@ -20,12 +21,15 @@ export default new Vuex.Store({
     patients(state){
       return state.patients
     },
+    doctors(state){
+      return state.doctors
+    },
     patientsFilt(state){
       return state.patients.filter(a => {
         return a.toLowerCase().indexOf(state.search.toLowerCase()) !== -1
       })
     },
-    doctors(state){
+    doctorsFilt(state){
       return state.doctors.filter(a => {
         return a.toLowerCase().indexOf(state.search.toLowerCase()) !== -1
       })
@@ -48,9 +52,19 @@ export default new Vuex.Store({
         state.patId = p
       }
     },
+    showDoctor(state){
+      return p => {
+        state.docId = p
+      }
+    },
     viewPatient(state){
       return state.patients.find(pat => {
         if(pat.id == state.patId) return pat
+      })
+    },
+    viewDoctor(state){
+      return state.doctors.find(doc => {
+        if(doc.id == state.docId) return doc
       })
     }
   },
@@ -63,6 +77,15 @@ export default new Vuex.Store({
     },
     removePatient(state,payload){
       state.patients.splice(state.patients.findIndex(function(i){ return i.id === payload; }), 1);
+    },
+    doctor(state,payload){
+      state.doctors.push(payload)
+    },
+    getAllDocs(state,payload){
+      state.doctors = payload
+    },
+    removeDoc(state,payload){
+      state.doctors.splice(state.patients.findIndex(function(i){ return i.id === payload; }), 1);
     }
   },
   actions: {
@@ -80,6 +103,22 @@ export default new Vuex.Store({
       axios.delete('http://localhost:3000/patients/'+id).then(response => {
         console.log(response)
         context.commit('removePatient',id)
+      })
+    },
+    addNewDoc(context,addPatient){
+      axios.post('http://localhost:3000/doctors', addPatient).then(response => {
+        context.commit('doctor', response.data)
+      })
+    },
+    allGetDocs(context){
+      axios.get('http://localhost:3000/doctors').then(response => {
+        context.commit('getAllDocs', response.data)
+      })
+    },
+    delDoc(context,id){
+      axios.delete('http://localhost:3000/doctors/'+id).then(response => {
+        console.log(response)
+        context.commit('removeDoc',id)
       })
     }
   }

@@ -6,11 +6,13 @@
         <v-col cols="12">
           <v-data-table :headers="headers" :items="patients" :items-per-page="5" class="elevation-1">
             <template v-slot:item.btns="{ item }">
+              <div class="text-right">
                 <router-link :to="{name: 'ViewPatients',params: {id:item.id}}">
                   <v-icon @click="show(item.id)" color="success">mdi-eye</v-icon>
                 </router-link>
                 <v-icon @click="edit(item)" class="ml-2">mdi-pencil</v-icon>
                 <v-icon @click="del(item.id)" color="error" class="ml-2">mdi-delete</v-icon>
+              </div>
             </template>
           </v-data-table>
         </v-col>
@@ -235,7 +237,7 @@
         {text: 'Дата рождения', value: 'year'},
         {text: 'Дата приема', value: 'regisdate'},
         {text: 'Дата выписки', value: 'reldate'},
-        {text: 'Врач', value: 'doctor'},
+        {text: 'Врач', value: 'responDocs'},
         {text: 'Причина', value: 'oldDisease'},
         {text: '', value: 'btns'},
       ],

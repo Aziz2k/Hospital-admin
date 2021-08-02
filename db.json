@@ -1,5 +1,56 @@
 {
-  "doctors": [],
+  "doctors": [
+    {
+      "name": "Farxodov Alisher",
+      "date": "2021-08-06",
+      "place": "Наманган",
+      "address": "Ташкент",
+      "matstatus": "Женат",
+      "edu": "Бакалавр",
+      "phone": "998965959595",
+      "phone2": "99896565656",
+      "workTime": "08:00-13:00",
+      "week": [
+        "Понедельник",
+        "Среда",
+        "Пятница",
+        "Воскресенье"
+      ],
+      "regisdate": "2021-08-29",
+      "spec": "Jarroh",
+      "depar": "Jarrohlik",
+      "staj": "3 года",
+      "workStart": "2021-08-10",
+      "workEnd": "2021-08-12",
+      "post": "Врач",
+      "workAddress": "Гдето здесь",
+      "id": 1
+    },
+    {
+      "name": "Urakov Sardor",
+      "date": "2020-11-12",
+      "address": "Xorezm",
+      "place": "Хорезм",
+      "matstatus": "Не женат",
+      "edu": "Среднее",
+      "phone2": "998995665466",
+      "phone": "99899322343",
+      "spec": "Глазной врач",
+      "depar": "Глазной врач",
+      "workTime": "12:00-18:00",
+      "staj": "2 года",
+      "regisdate": "2021-06-18",
+      "week": [
+        "Каждый день"
+      ],
+      "workStart": "2021-08-12",
+      "workEnd": "2021-07-28",
+      "workAddress": "Ташкент",
+      "post": "Глав Врач",
+      "desc": "",
+      "id": 2
+    }
+  ],
   "patients": [
     {
       "name": "Ali Azamov",
@@ -29,7 +80,39 @@
       "oldDisease": "Nevrologik",
       "treatmentDate": "2021-05-13",
       "diagnoz": "Kuchli nevrologik bosim tufayli (ayol kishi tomonidan)",
-      "id": 1
+      "id": 1,
+      "responDocs": "Farxodov Alisher"
+    },
+    {
+      "name": "Asamova Muqaddas",
+      "year": "2021-01-15",
+      "place": "Ташкент",
+      "address": "Yunusabad",
+      "edu": "Среднее",
+      "matstatus": "Не замужем",
+      "work": "Работает",
+      "workAddress": "Wings Distribution",
+      "phone2": "998946467612",
+      "phone": "998935575451",
+      "blood": "II",
+      "faktor": "2",
+      "insurance": "#0099425",
+      "lgotoType": "#9424125",
+      "insuranceFirm": "StraxFirm",
+      "lgoto": "Panda",
+      "lgotoDate": "2021-06-24",
+      "regisdate": "2021-07-17",
+      "reldate": "2021-07-15",
+      "responDocs": "Farxodov Alisher",
+      "depart": "Хирургический корпус",
+      "weight": "52",
+      "height": "158",
+      "treatmentDate": "2021-07-08",
+      "oldDisease": "Kakoyeto",
+      "hosAddress": "Yunusabad",
+      "oldDoc": "Shuxrat.A.Sh",
+      "diagnoz": "Kakoyeto",
+      "id": 2
     }
   ]
 }
